@@ -1,1 +1,1 @@
-# ToDoApp
+# To-Do List: Schedule planner
