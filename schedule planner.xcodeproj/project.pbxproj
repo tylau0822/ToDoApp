@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		D6B7C7A12C09330A00B70493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7C7A02C09330A00B70493 /* AppDelegate.swift */; };
 		D6B7C7A32C09330A00B70493 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7C7A22C09330A00B70493 /* SceneDelegate.swift */; };
-		D6B7C7A52C09330A00B70493 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7C7A42C09330A00B70493 /* ViewController.swift */; };
 		D6B7C7A82C09330A00B70493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B7C7A62C09330A00B70493 /* Main.storyboard */; };
 		D6B7C7AA2C09330B00B70493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B7C7A92C09330B00B70493 /* Assets.xcassets */; };
 		D6B7C7AD2C09330B00B70493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B7C7AB2C09330B00B70493 /* LaunchScreen.storyboard */; };
+		D6B7C7B62C09336F00B70493 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7C7B52C09336F00B70493 /* TaskListViewController.swift */; };
+		D6B7C7B82C09458D00B70493 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7C7B72C09458D00B70493 /* AddTaskViewController.swift */; };
+		D6B7C7BB2C09467F00B70493 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7C7BA2C09467F00B70493 /* Task.swift */; };
+		FA6BC8F889CA2B11DD7C0606 /* Pods_schedule_planner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAD09CEC7787D113306C9CB /* Pods_schedule_planner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040C146F9E8240E3271A0980 /* Pods-schedule planner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-schedule planner.debug.xcconfig"; path = "Target Support Files/Pods-schedule planner/Pods-schedule planner.debug.xcconfig"; sourceTree = "<group>"; };
+		28FC666683AFC347D3107A2B /* Pods-schedule planner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-schedule planner.release.xcconfig"; path = "Target Support Files/Pods-schedule planner/Pods-schedule planner.release.xcconfig"; sourceTree = "<group>"; };
+		4FAD09CEC7787D113306C9CB /* Pods_schedule_planner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_schedule_planner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B7C79D2C09330A00B70493 /* schedule planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "schedule planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B7C7A02C09330A00B70493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6B7C7A22C09330A00B70493 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D6B7C7A42C09330A00B70493 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6B7C7A72C09330A00B70493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6B7C7A92C09330B00B70493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6B7C7AC2C09330B00B70493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6B7C7AE2C09330B00B70493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B7C7B52C09336F00B70493 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		D6B7C7B72C09458D00B70493 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		D6B7C7BA2C09467F00B70493 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6BC8F889CA2B11DD7C0606 /* Pods_schedule_planner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CFA8825264507558BD9950D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				040C146F9E8240E3271A0980 /* Pods-schedule planner.debug.xcconfig */,
+				28FC666683AFC347D3107A2B /* Pods-schedule planner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		98D172EF56B60296E2DA0EAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FAD09CEC7787D113306C9CB /* Pods_schedule_planner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D6B7C7942C09330A00B70493 = {
 			isa = PBXGroup;
 			children = (
 				D6B7C79F2C09330A00B70493 /* schedule planner */,
 				D6B7C79E2C09330A00B70493 /* Products */,
+				8CFA8825264507558BD9950D /* Pods */,
+				98D172EF56B60296E2DA0EAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,33 @@
 		D6B7C79F2C09330A00B70493 /* schedule planner */ = {
 			isa = PBXGroup;
 			children = (
+				D6B7C7B92C09467000B70493 /* Models */,
+				D6B7C7B42C09335E00B70493 /* Controllers */,
 				D6B7C7A02C09330A00B70493 /* AppDelegate.swift */,
 				D6B7C7A22C09330A00B70493 /* SceneDelegate.swift */,
-				D6B7C7A42C09330A00B70493 /* ViewController.swift */,
 				D6B7C7A62C09330A00B70493 /* Main.storyboard */,
 				D6B7C7A92C09330B00B70493 /* Assets.xcassets */,
 				D6B7C7AB2C09330B00B70493 /* LaunchScreen.storyboard */,
 				D6B7C7AE2C09330B00B70493 /* Info.plist */,
 			);
 			path = "schedule planner";
+			sourceTree = "<group>";
+		};
+		D6B7C7B42C09335E00B70493 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6B7C7B52C09336F00B70493 /* TaskListViewController.swift */,
+				D6B7C7B72C09458D00B70493 /* AddTaskViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D6B7C7B92C09467000B70493 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D6B7C7BA2C09467F00B70493 /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6B7C7B12C09330B00B70493 /* Build configuration list for PBXNativeTarget "schedule planner" */;
 			buildPhases = (
+				BF2623C53C6807325A77D8A1 /* [CP] Check Pods Manifest.lock */,
 				D6B7C7992C09330A00B70493 /* Sources */,
 				D6B7C79A2C09330A00B70493 /* Frameworks */,
 				D6B7C79B2C09330A00B70493 /* Resources */,
+				5423FD8B7E857E3FAE9E94CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +181,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5423FD8B7E857E3FAE9E94CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-schedule planner/Pods-schedule planner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-schedule planner/Pods-schedule planner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-schedule planner/Pods-schedule planner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF2623C53C6807325A77D8A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-schedule planner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6B7C7992C09330A00B70493 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6B7C7A52C09330A00B70493 /* ViewController.swift in Sources */,
 				D6B7C7A12C09330A00B70493 /* AppDelegate.swift in Sources */,
+				D6B7C7B82C09458D00B70493 /* AddTaskViewController.swift in Sources */,
+				D6B7C7BB2C09467F00B70493 /* Task.swift in Sources */,
 				D6B7C7A32C09330A00B70493 /* SceneDelegate.swift in Sources */,
+				D6B7C7B62C09336F00B70493 /* TaskListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +295,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +358,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +379,7 @@
 		};
 		D6B7C7B22C09330B00B70493 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 040C146F9E8240E3271A0980 /* Pods-schedule planner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +407,7 @@
 		};
 		D6B7C7B32C09330B00B70493 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28FC666683AFC347D3107A2B /* Pods-schedule planner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
